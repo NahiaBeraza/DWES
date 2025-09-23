@@ -1,3 +1,57 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagenes/centro-somorrostro-logo.jpg">
+</head>
+<body>
+    <div class="cont">
+        <h1>Registro</h1>
+        <form action="registroDatos.php" method="POST" class="login-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="nombre" required>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label>Curso</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" id="curso1" name="curso" value="1" required>
+                    1
+                </label>
+                <label>
+                    <input type="radio" id="curso2" name="curso" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" id="curso3" name="curso" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" id="curso4" name="curso" value="4">
+                    4
+                </label>
+            </div>
+
+            <hr>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="contrasena" required>
+
+            <hr>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
 </html>
