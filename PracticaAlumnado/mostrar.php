@@ -26,6 +26,7 @@
             echo "</tr>";
         }
         echo "</table>";
+        echo '<a href="eleccion.html"><button id="boton">Volver</button></a>'; 
     } else {
         echo "No hay datos disponibles.";
     }

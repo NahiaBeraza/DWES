@@ -71,7 +71,7 @@
             echo "<li><strong>Curso:</strong> " . $datos['curso'] . "</li>";
             echo "<li><strong>Email:</strong> " . $datos['email'] . "</li>";
             echo "</ul>";
-            echo "<a href='ongiEtorri.html'>Introducir datos</button></a>";
+            echo "<a href='ongiEtorri.html'>Volver</button></a>";
         
     } else {
         echo '
