@@ -3,8 +3,12 @@
         private $minimoDePuntos=false;
         
         //CONSTRUCTOR
-        public function __construct($minimoDePuntos){
-             $this->minimoDePuntos=$minimoDePuntos;
+        public function __construct($nombre, $nacionalidad, $numero, $escuderia, $puntos, $minimoDePuntos) {
+
+            parent::__construct($nombre, $nacionalidad, $numero, $escuderia, $puntos);
+
+            $this->minimoDePuntos = $minimoDePuntos;
+
         }
 
         //GETTERS Y SETTERS

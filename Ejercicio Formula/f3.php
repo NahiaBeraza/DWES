@@ -3,8 +3,12 @@
         private $academia;
 
         //CONSTRUCTOR
-        public function __construct($academia){
-             $this->paisacademia=$academia;
+        public function __construct($nombre, $nacionalidad, $numero, $escuderia, $puntos, $academia) {
+
+            parent::__construct($nombre, $nacionalidad, $numero, $escuderia, $puntos);
+
+            $this->academia = $academia;
+
         }
 
         //GETTERS Y SETTERS

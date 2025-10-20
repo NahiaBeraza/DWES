@@ -4,8 +4,12 @@
 
         //CONSTRUCTOR
     
-        public function __construct($potenciaMaxima){
-             $this->potenciaMaxima=$potenciaMaxima;
+        public function __construct($nombre, $nacionalidad, $numero, $escuderia, $puntos, $potenciaMaxima) {
+
+            parent::__construct($nombre, $nacionalidad, $numero, $escuderia, $puntos);
+
+            $this->potenciaMaxima = $potenciaMaxima;
+
         }
 
         //GETTERS Y SETTERS

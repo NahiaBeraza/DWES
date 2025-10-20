@@ -3,8 +3,12 @@
         private $pais;
 
         //CONSTRUCTOR
-        public function __construct($pais){
-             $this->pais=$pais;
+        public function __construct($nombre, $nacionalidad, $numero, $escuderia, $puntos, $pais) {
+
+            parent::__construct($nombre, $nacionalidad, $numero, $escuderia, $puntos);
+
+            $this->pais = $pais;
+
         }
 
         //GETTERS Y SETTERS
