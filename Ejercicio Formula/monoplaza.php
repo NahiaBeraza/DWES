@@ -1,5 +1,5 @@
 <?php
-    class Monoplaza{
+    abstract class Monoplaza{
         protected $nombre;
         protected $nacionalidad;
         protected $numero_monoplaza;
@@ -58,9 +58,17 @@
             return $this->puntos;
         }
 
+
         //METODOS
 
+        abstract function otorgarPuntos( $posicion, $vueltaRapida);
+
+        abstract function posicionValida($posicion);
+    
+
         
+
+
 
 
     }

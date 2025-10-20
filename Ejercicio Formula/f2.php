@@ -19,5 +19,49 @@
         public function getMinimoPuntos(){
             return $this->minimoPuntos;
         }
+
+        //METODOS
+
+        public function otorgarPuntos(int $posicion, bool $vueltaRapida){
+            $tabla=[10,8,7,6,5,4,3,2,1,0];
+
+            $puntosGanados=0;
+            if(posicionValida($posicion)){
+                if($posicion>=10){
+                    $this-> puntos= $this->puntos+ $puntosGanados;
+
+                }else{
+
+                    if($vueltaRapida){
+                        $puntosGanados=$tabla[$posicion-1];
+                        $this-> puntos= $this->puntos+ $puntosGanados + 1;
+                        
+                    }else{
+
+                        $puntosGanados=$tabla[$posicion-1];
+                        $this-> puntos= $this->puntos+ $puntosGanados;
+                    }
+                }
+            }
+
+
+        }
+
+        public function posicionValida(int $posicion) {
+            return $posicion >= 1 && $posicion <= 24;
+        }
+
+        public function subirCategoria(string $patrocinadorPrincipal) {
+            echo "Subiendo de F2 a F1...";
+            
+            return new F1(
+                $this->nombrePiloto,
+                $this->nacionalidad,
+                $this->numero,
+                $this->escuderia,
+                $this->puntos,
+                $patrocinadorPrincipal
+            );
+        }
     }
 ?>
