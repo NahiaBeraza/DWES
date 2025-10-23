@@ -51,7 +51,7 @@
             return $posicion >= 1 && $posicion <= 24;
         }
 
-        public function subirCategoria(string $patrocinadorPrincipal) {
+        public function subirCategoria($patrocinadorPrincipal) {
             echo "Subiendo de F2 a F1...";
             
             return new F1(

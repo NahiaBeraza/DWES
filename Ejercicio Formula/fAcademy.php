@@ -51,7 +51,7 @@
             return $posicion >= 1 && $posicion <= 18;
         }
 
-        public function subirCategoria(string $pais) {
+        public function subirCategoria($pais) {
             echo "Subiendo de FAcademy a F4...";
 
             return new F4(

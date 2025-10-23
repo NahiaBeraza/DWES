@@ -45,7 +45,7 @@
             return $posicion >= 1 && $posicion <= 30;
         }
 
-        public function subirCategoria(string $minimoDePuntos) {
+        public function subirCategoria($minimoDePuntos) {
             echo "Subiendo de F3 a F2...";
             
             return new F2(
